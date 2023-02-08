@@ -41,7 +41,7 @@ function rot13(encodedStr) {
     // console.log(decodedArr);
   }
   // Only change code above this line
-  return decodedArr.join(" "); // Array to String
+  return decodedArr.join(""); // Array to String
 }
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
