@@ -1,11 +1,30 @@
 const lookup = {
-  'A': 'N','B': 'O','C': 'P','D': 'Q',
-  'E': 'R','F': 'S','G': 'T','H': 'U',
-  'I': 'V','J': 'W','K': 'X','L': 'Y',
-  'M': 'Z','N': 'A','O': 'B','P': 'C',
-  'Q': 'D','R': 'E','S': 'F','T': 'G',
-  'U': 'H','V': 'I','W': 'J','X': 'K',
-  'Y': 'L','Z': 'M'
+  'A': 'N',
+  'B': 'O',
+  'C': 'P',
+  'D': 'Q',
+  'E': 'R',
+  'F': 'S',
+  'G': 'T',
+  'H': 'U',
+  'I': 'V',
+  'J': 'W',
+  'K': 'X',
+  'L': 'Y',
+  'M': 'Z',
+  'N': 'A',
+  'O': 'B',
+  'P': 'C',
+  'Q': 'D',
+  'R': 'E',
+  'S': 'F',
+  'T': 'G',
+  'U': 'H',
+  'V': 'I',
+  'W': 'J',
+  'X': 'K',
+  'Y': 'L',
+  'Z': 'M'
 };
 
 function rot13(encodedStr){
@@ -13,6 +32,14 @@ function rot13(encodedStr){
   let decodedArr = []; // Your Result goes here
   // Only change code below this line
   // your code here
+  for(let x of codeArr){
+    let decodeWordArr = [];
+    let codedWord = x.split();
+    codedWord.forEach(element => {
+      decodeWordArr.push(lookup.element);
+    });
+    decodedArr.push(decodeWordArr.join(''));
+  }
   // Only change code above this line
   return decodedArr.join(""); // Array to String
 }
