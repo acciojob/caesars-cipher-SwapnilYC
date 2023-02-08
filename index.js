@@ -27,18 +27,14 @@ const lookup = {
   'Z': 'M'
 };
 
-function rot13(encodedStr){
+function rot13(encodedStr) {
   const codeArr = encodedStr.split("");  // String to Array
   let decodedArr = []; // Your Result goes here
   // Only change code below this line
   // your code here
-  for(let x of codeArr){
-    let decodeWordArr = [];
-    let codedWord = x.split();
-    codedWord.forEach(element => {
-      decodeWordArr.push(lookup.element);
-    });
-    decodedArr.push(decodeWordArr.join(''));
+  for (let x of codeArr) {
+    decodedArr.push(lookup[x]);
+    // console.log(decodedArr);
   }
   // Only change code above this line
   return decodedArr.join(""); // Array to String
